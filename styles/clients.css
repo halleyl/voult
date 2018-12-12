@@ -1,0 +1,51 @@
+/* Mixin for underlined link styles */
+/* Mixin for plain link styles */
+.text {
+  font-family: "Nunito", sans-serif; }
+
+.client-slide {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .client-slide figure {
+    border: 1px solid #4a4a4a;
+    margin: 1rem auto; }
+    .client-slide figure a {
+      color: #4a4a4a;
+      -webkit-text-decoration: underline #d95000 solid;
+              text-decoration: underline #d95000 solid; }
+    .client-slide figure a:hover {
+      color: #d95000;
+      -webkit-text-decoration: underline #4a4a4a solid;
+              text-decoration: underline #4a4a4a solid; }
+    .client-slide figure img {
+      width: 100%;
+      max-width: 500px; }
+    .client-slide figure figcaption {
+      width: 80%;
+      font-family: "Nunito", sans-serif;
+      font-size: 1rem;
+      text-align: left;
+      margin: 0 10% 2rem; }
+      .client-slide figure figcaption .attribution {
+        font-family: "Libre Baskerville", serif;
+        font-size: .8rem;
+        text-align: right; }
+  .client-slide .left {
+    width: 2.5rem;
+    position: relative;
+    left: 50%; }
+  .client-slide .right {
+    width: 2.5rem;
+    position: relative;
+    right: 50%; }
+
+/*# sourceMappingURL=clients.css.map */
