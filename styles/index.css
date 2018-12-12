@@ -1,4 +1,5 @@
-/* Mixin for link styles */
+/* Mixin for underlined link styles */
+/* Mixin for plain link styles */
 html, body {
   padding: 0;
   margin: 0;
@@ -113,6 +114,10 @@ nav ul {
   background-size: cover;
   background-position: center;
   margin: 0; }
+  .what a {
+    text-decoration: none; }
+  .what a:hover {
+    text-decoration: none; }
   .what p {
     font-family: "Libre Baskerville", serif;
     font-size: 2rem;
@@ -130,6 +135,10 @@ nav ul {
 
 .clients {
   text-align: center; }
+  .clients a {
+    text-decoration: none; }
+  .clients a:hover {
+    text-decoration: none; }
   .clients h2 {
     font-family: "Nunito", sans-serif;
     font-size: 2rem;
@@ -159,6 +168,10 @@ nav ul {
   background-size: cover;
   background-position: center;
   margin: 0; }
+  .about a {
+    text-decoration: none; }
+  .about a:hover {
+    text-decoration: none; }
   .about p {
     font-family: "Libre Baskerville", serif;
     font-size: 2rem;
@@ -176,6 +189,10 @@ nav ul {
 
 .connect {
   text-align: center; }
+  .connect a {
+    text-decoration: none; }
+  .connect a:hover {
+    text-decoration: none; }
   .connect h2 {
     font-family: "Nunito", sans-serif;
     font-size: 2rem;
@@ -187,6 +204,14 @@ nav ul {
     height: 9rem;
     max-height: 15rem;
     margin: 3rem auto 0; }
+    .connect figure a {
+      color: #4a4a4a;
+      -webkit-text-decoration: underline #d95000 solid;
+              text-decoration: underline #d95000 solid; }
+    .connect figure a:hover {
+      color: #d95000;
+      -webkit-text-decoration: underline #4a4a4a solid;
+              text-decoration: underline #4a4a4a solid; }
     .connect figure img {
       width: 4rem;
       position: relative;
@@ -195,14 +220,6 @@ nav ul {
     .connect figure figcaption {
       font-family: "Nunito", sans-serif;
       font-size: 1rem; }
-      .connect figure figcaption a {
-        color: #4a4a4a;
-        -webkit-text-decoration: underline #d95000 solid;
-                text-decoration: underline #d95000 solid; }
-      .connect figure figcaption a:hover {
-        color: #d95000;
-        -webkit-text-decoration: underline #4a4a4a solid;
-                text-decoration: underline #4a4a4a solid; }
   .connect div {
     width: 60%;
     font-family: "Nunito", sans-serif;
