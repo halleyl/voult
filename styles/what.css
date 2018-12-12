@@ -1,0 +1,41 @@
+/* Mixin for underlined link styles */
+/* Mixin for plain link styles */
+.text {
+  font-family: "Nunito", sans-serif; }
+
+.cards {
+  text-align: center; }
+  .cards a {
+    text-decoration: none; }
+  .cards a:hover {
+    text-decoration: none; }
+  .cards h3 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #4a4a4a; }
+  .cards figure {
+    width: 80%;
+    border: 1px solid #4a4a4a;
+    margin: 3rem auto 0; }
+    .cards figure a {
+      color: #4a4a4a;
+      -webkit-text-decoration: underline #d95000 solid;
+              text-decoration: underline #d95000 solid; }
+    .cards figure a:hover {
+      color: #d95000;
+      -webkit-text-decoration: underline #4a4a4a solid;
+              text-decoration: underline #4a4a4a solid; }
+    .cards figure img {
+      width: 4rem;
+      position: relative;
+      top: -2rem;
+      margin-bottom: -1rem; }
+    .cards figure figcaption {
+      font-family: "Nunito", sans-serif;
+      font-size: 1rem;
+      text-align: left;
+      padding: 1.5rem;
+      margin-top: -2rem; }
+
+/*# sourceMappingURL=what.css.map */

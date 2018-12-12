@@ -1,0 +1,62 @@
+$gray: #4a4a4a;
+$accent: #d95000;
+$overlay: rgba(217, 80, 0, .75);
+
+$body: 'Nunito', sans-serif;
+$display: 'Libre Baskerville', serif;
+
+/* Mixin for underlined link styles */
+@mixin under-links {
+  a {
+    color: #4a4a4a;
+    text-decoration: underline #d95000 solid;
+  }
+  a:hover {
+    color: #d95000;
+    text-decoration: underline #4a4a4a solid;
+  }
+}
+
+/* Mixin for plain link styles */
+@mixin plain-links {
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.text {
+  font-family: $body;
+}
+
+.cards {
+  text-align: center;
+  @include plain-links;
+  h3 {
+    font-family: $display;
+    font-size: 1.25rem;
+    text-align: center;
+    color: $gray;
+  }
+  figure {
+    width: 80%;
+    border: 1px solid $gray;
+    margin: 3rem auto 0;
+    @include under-links;
+    img {
+      width: 4rem;
+      position: relative;
+      top: -2rem;
+      margin-bottom: -1rem;
+    }
+    figcaption {
+      font-family: $body;
+      font-size: 1rem;
+      text-align: left;
+      padding: 1.5rem;
+      margin-top: -2rem;
+    }
+  }
+}
