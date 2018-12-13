@@ -27,7 +27,20 @@ $display: 'Libre Baskerville', serif;
   }
 }
 
-html, body {
+/* Super basic normalize */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -117,7 +130,7 @@ h1 {
 
 nav {
   img {
-    max-width: 3rem;
+    max-width: 5rem;
     display: block;
     padding: 1rem;
     margin-left: auto;
@@ -132,15 +145,26 @@ nav {
     border: 1px solid $gray;
     list-style: none;
     margin: 0;
-    padding: 1rem;
+    padding: 0;
     max-width: 8rem;
     li {
       line-height: 1.25rem;
       font-family: $body;
-      padding: .5rem;
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0;
       a {
         text-decoration: none;
+        display: inline-block;
         color: $gray;
+        width: 100%;
+        box-sizing: border-box;
+        padding: .75rem 1rem;
+        &:hover {
+          color: white;
+          background-color: $accent;
+        }
       }
     }
   }
@@ -149,6 +173,21 @@ nav {
 /* Hide the Menu */
 .hidden {
   display: none;
+}
+
+/* Show the Menu */
+.shown {
+  display: block;
+  animation: fade .5s ease;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* General Content Styles */
@@ -193,6 +232,9 @@ main {
     padding: .5rem 1rem;
     border-radius: 1rem;
     margin: 1rem auto 2rem;
+    &:hover {
+      background-color: $gray;
+    }
   }
 }
 
@@ -207,6 +249,7 @@ footer {
     font-family: $body;
     font-size: .8rem;
     color: white;
+    padding: 1rem;
   }
   aside {
     img {

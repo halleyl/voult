@@ -38,7 +38,8 @@
       .client-slide figure figcaption .attribution {
         font-family: "Libre Baskerville", serif;
         font-size: .8rem;
-        text-align: right; }
+        text-align: right;
+        padding-top: 1rem; }
   .client-slide .left {
     width: 2.5rem;
     position: relative;
