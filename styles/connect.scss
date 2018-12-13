@@ -92,10 +92,46 @@ $display: 'Libre Baskerville', serif;
       border: 1px solid $gray;
       outline-color: $accent;
     }
-    span {
-      color: $accent;
-      font-size: .8rem;
-    }
+  }
+  button {
+    width: 60%;
+    font-family: $body;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    display: block;
+    background-color: $accent;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    margin: 1rem auto 2rem;
+    cursor: pointer;
+  }
+}
 
+.contact {
+  width: 80%;
+  display: block;
+  margin: 0 10%;
+  img {
+    width: 100%;
+  }
+  figure {
+    width: 100%;
+    padding: 1rem;
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      text-decoration: none;
+      color: $gray;
+      img {
+        width: 2rem;
+        margin-right: 1rem;
+      }
+      figcaption {
+        font-family: $body;
+      }
+      
+    }
   }
 }

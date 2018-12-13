@@ -59,8 +59,45 @@
       text-indent: .5rem;
       border: 1px solid #4a4a4a;
       outline-color: #d95000; }
-    .form .double span {
-      color: #d95000;
-      font-size: .8rem; }
+  .form button {
+    width: 60%;
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    display: block;
+    background-color: #d95000;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    margin: 1rem auto 2rem;
+    cursor: pointer; }
+
+.contact {
+  width: 80%;
+  display: block;
+  margin: 0 10%; }
+  .contact img {
+    width: 100%; }
+  .contact figure {
+    width: 100%;
+    padding: 1rem; }
+    .contact figure a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      text-decoration: none;
+      color: #4a4a4a; }
+      .contact figure a img {
+        width: 2rem;
+        margin-right: 1rem; }
+      .contact figure a figcaption {
+        font-family: "Nunito", sans-serif; }
 
 /*# sourceMappingURL=connect.css.map */
