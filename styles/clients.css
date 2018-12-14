@@ -9,8 +9,8 @@
   border-bottom: 1px solid #4a4a4a; }
 
 .carousel-inner {
-  width: 90%;
-  margin-left: 5%;
+  width: 80%;
+  margin-left: 10%;
   text-align: center; }
   .carousel-inner figure {
     margin: 1rem auto; }
@@ -42,14 +42,12 @@
   content: url("../images/arrows-left.svg");
   width: 2rem;
   height: 2rem;
-  position: relative;
-  left: -25%; }
+  position: relative; }
 
 .carousel-control-next-icon {
   content: url("../images/arrows-right.svg");
   width: 2rem;
   height: 2rem;
-  position: relative;
-  right: -25%; }
+  position: relative; }
 
 /*# sourceMappingURL=clients.css.map */

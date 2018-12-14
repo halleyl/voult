@@ -113,16 +113,17 @@ $display: 'Libre Baskerville', serif;
 }
 
 .contact {
-  width: 80%;
+  max-width: 400px;
   display: block;
-  margin: 0 10%;
+  margin: 0 auto 2rem;
   img {
     width: 100%;
     max-width: 400px;
   }
   figure {
-    width: 100%;
+    width: 70%;
     padding: 1rem;
+    margin: 0 15%;
     position: relative;
     a {
       display: flex;

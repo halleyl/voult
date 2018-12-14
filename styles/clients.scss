@@ -38,8 +38,8 @@ $display: 'Libre Baskerville', serif;
 }
 
 .carousel-inner {
-  width: 90%;
-  margin-left: 5%;
+  width: 80%;
+  margin-left: 10%;
   text-align: center;
   
   figure {
@@ -71,7 +71,6 @@ $display: 'Libre Baskerville', serif;
   width: 2rem;
   height: 2rem;
   position: relative;
-  left: -25%;
 }
 
 .carousel-control-next-icon {
@@ -79,5 +78,4 @@ $display: 'Libre Baskerville', serif;
   width: 2rem;
   height: 2rem;
   position: relative;
-  right: -25%;
 }
