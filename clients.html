@@ -5,6 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Stylesheets -->
+  
+  <!-- Extracted Carousel CSS & JS from github.com/mekkli -->
+  <link rel="stylesheet" href="styles/carousel.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="script/carousel.min.js" type="text/javascript"></script>
+  
   <link href="https://fonts.googleapis.com/css?family=Nunito:300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet">
   
@@ -20,13 +27,13 @@
     </h1>
     <!-- Navigation -->
     <nav class="col span_6_of_12">
-      <a href="#"><img src="images/menu.svg" class="hamburger" alt="Menu"></a>
       <ul class="hidden">
         <li><a href="what.html">What We Do</a></li>
         <li><a href="clients.html">Clients</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="connect.html">Connect</a></li>
       </ul>
+      <a href="#" class="menu"><img src="images/menu.svg" class="hamburger" alt="Menu"></a>
     </nav>
   </header>
   <main class="section group">
@@ -36,16 +43,46 @@
       <p>Utilising blue-sky thinking while remembering to surprise and delight. Growing stakeholder management with the aim to increase viewability. Execute branding and try to go viral. Taking brand integration with the possibility to go viral. Grow empathy maps and then improve overall outcomes.</p>
       <p>Leverage brand ambassadors to in turn re-target key demographics. Considering stakeholder management so that as an end result, we use best practice. Target innovation to, consequently, surprise and delight.</p>
     </section>
-    <section class="client-slide col span_12_of_12">
-      <div><img src="images/arrows-left.svg" alt="left arrow" class="left"></div>
-      <figure>
-        <img src="images/logo-scp.jpg" alt="Sterling Cooper and Partners" class="client-logo">
-        <figcaption>
-          <p class="quote">&ldquo;Demonstrating user engagement and finally innovate. Synchronising growth hacking and finally take this offline. Utilising growth hacking and try to take this offline. Building stakeholder management and possibly think outside the box. Repurposing empathy maps so that we disrupt the balance.&rdquo;</p>
-          <p class="attribution">— Bert Cooper, Senior Partner</p>
-        </figcaption>
-      </figure>
-      <div><img src="images/arrows-right.svg" alt="left arrow" class="right"></div>
+
+    <section id="carouselExampleControls" class="carousel slide col span_12_of_12" data-ride="carousel">
+      <div class="carousel-inner">
+        <figure class="carousel-item active">
+          <img src="images/logo-scp.jpg" alt="Sterling Cooper and Partners" class="client-logo">
+          <figcaption>
+            <p class="quote">&ldquo;Demonstrating user engagement and finally innovate. Synchronising growth hacking and finally take this offline. Utilising growth hacking and try to take this offline. Building stakeholder management and possibly think outside the box.&rdquo;</p>
+            <p class="attribution">— Bert Cooper, Senior Partner</p>
+          </figcaption>
+        </figure>
+        <figure class="carousel-item">
+          <img src="images/logo-initech.jpg" alt="Initech" class="client-logo">
+          <figcaption>
+            <p class="quote">&ldquo;Synchronising mobile-first design so that we re-target key demographics. Creating above the fold in order to get buy in. Amplifying dark social while remembering to surprise and delight. Funneling awareness to create timely synergy.&rdquo;</p>
+            <p class="attribution">— Bill Lundbergh, General Manager</p>
+          </figcaption>
+        </figure>
+        <figure class="carousel-item">
+          <img src="images/logo-dm.jpg" alt="Dunder Mifflin" class="client-logo">
+          <figcaption>
+            <p class="quote">&ldquo;Informing branding with a goal to disrupt the balance. Informing social in order to build ROI. Building relevant and engaging content but be CMSable. Informing growth channels with a goal to be on brand. Utilising big data and try to innovate.&rdquo;</p>
+            <p class="attribution">— David Wallace, CFO</p>
+          </figcaption>
+        </figure>
+        <figure class="carousel-item">
+          <img src="images/logo-sirius.jpg" alt="Sirius Cybernetics Corporation" class="client-logo">
+          <figcaption>
+            <p class="quote">&ldquo;Lead growth hacking in order to maximise share of voice. Generate custom solutions and finally further your reach. Consider agile in order to make users into advocates. Funneling below the fold in order to re-target key demographics.&rdquo;</p>
+            <p class="attribution">— Vann Harl, Executive</p>
+          </figcaption>
+        </figure>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </section>
     <section class="cta col span_12_of_12">
       <p>Amplify brand pillars in order to further your reach. Improve overall outcomes.</p>
