@@ -46,77 +46,6 @@ time, mark, audio, video {
   box-sizing: border-box;
 }
 
-/* Responsive Grid Styles */
-
-/*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
-
-/*  COLUMN SETUP  */
-.col {
-	display: block;
-	float:left;
-	margin: 0 0 0 1%;
-}
-.col:first-child { margin-left: 0; }
-
-/*  GROUPING  */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
-
-/*  GRID OF TWELVE  */
-.span_12_of_12 {
-	width: 100%;
-    margin: 0;
-}
-.span_11_of_12 {
-  	width: 91.58%;
-}
-.span_10_of_12 {
-  	width: 83.16%;
-}
-
-.span_9_of_12 {
-  	width: 74.75%;
-}
-
-.span_8_of_12 {
-  	width: 66.33%;
-}
-
-.span_7_of_12 {
-  	width: 57.91%;
-}
-
-.span_6_of_12 {
-  	width: 49.5%;
-}
-
-.span_5_of_12 {
-  	width: 41.08%;
-}
-
-.span_4_of_12 {
-  	width: 32.66%;
-}
-
-.span_3_of_12 {
-  	width: 24.25%;
-}
-
-.span_2_of_12 {
-  	width: 15.83%;
-}
-
-.span_1_of_12 {
-  	width: 7.416%;
-}
-
 header {
   position: fixed;
   z-index: 2;
@@ -128,6 +57,9 @@ header {
 }
 
 h1 { 
+  display: block;
+  float: left;
+  width: 49.5%;
   a {
     text-decoration: none;
     img {
@@ -139,6 +71,9 @@ h1 {
 
 nav {
   right: 0;
+  display: block;
+  float: left;
+  width: 49.5%;
   .menu {
     position: relative;
     z-index: 5;
@@ -198,7 +133,7 @@ nav {
 .shown {
   display: block;
   right: 0%;
-  animation: slide .25s linear;
+  animation: slide .5s ease-out;
 }
 
 @keyframes slide {
@@ -222,7 +157,7 @@ main {
     width: 100%;
     text-align: center;
     background-color: $accent;
-    padding: 9rem 0 3rem;
+    padding: 3rem 0;
     margin: 0;
   }
   .hero {
@@ -265,7 +200,6 @@ main {
 footer {
   background-color: $accent;
   text-align: center;
-  margin-top: 10rem;
   p {
     display: inline-block;
     font-family: $body;
