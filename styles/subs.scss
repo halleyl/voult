@@ -59,7 +59,7 @@ time, mark, audio, video {
 .col {
 	display: block;
 	float:left;
-	margin: 1% 0 1% 1%;
+	margin: 0 0 0 1%;
 }
 .col:first-child { margin-left: 0; }
 
@@ -117,11 +117,21 @@ time, mark, audio, video {
   	width: 7.416%;
 }
 
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  height: 6rem;
+  border-bottom: 1px solid $accent;
+}
+
 h1 { 
   a {
     text-decoration: none;
     img {
-      max-width: 15rem;
+      width: 13rem;
       padding: 1rem 0 0 1rem;
     }
   }
@@ -203,6 +213,8 @@ nav {
 /* General Content Styles */
 
 main {
+  position: relative;
+  margin-top: 6rem;
   h2 {
     font-family: $display;
     font-size: 2.5rem;
@@ -210,7 +222,7 @@ main {
     width: 100%;
     text-align: center;
     background-color: $accent;
-    padding: 3rem 0;
+    padding: 9rem 0 3rem;
     margin: 0;
   }
   .hero {

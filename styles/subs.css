@@ -30,7 +30,7 @@ time, mark, audio, video {
 .col {
   display: block;
   float: left;
-  margin: 1% 0 1% 1%; }
+  margin: 0 0 0 1%; }
 
 .col:first-child {
   margin-left: 0; }
@@ -86,10 +86,19 @@ time, mark, audio, video {
 .span_1_of_12 {
   width: 7.416%; }
 
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  height: 6rem;
+  border-bottom: 1px solid #d95000; }
+
 h1 a {
   text-decoration: none; }
   h1 a img {
-    max-width: 15rem;
+    width: 13rem;
     padding: 1rem 0 0 1rem; }
 
 nav {
@@ -162,19 +171,22 @@ nav {
   100% {
     right: 0; } }
 /* General Content Styles */
-main h2 {
-  font-family: "Libre Baskerville", serif;
-  font-size: 2.5rem;
-  color: white;
-  width: 100%;
-  text-align: center;
-  background-color: #d95000;
-  padding: 3rem 0;
-  margin: 0; }
-main .hero {
-  width: 100%; }
-main .text p {
-  margin: 1rem; }
+main {
+  position: relative;
+  margin-top: 6rem; }
+  main h2 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 2.5rem;
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-color: #d95000;
+    padding: 9rem 0 3rem;
+    margin: 0; }
+  main .hero {
+    width: 100%; }
+  main .text p {
+    margin: 1rem; }
 
 .cta {
   text-align: center; }
