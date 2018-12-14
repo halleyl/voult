@@ -117,7 +117,7 @@ time, mark, audio, video {
   	width: 7.416%;
 }
 
-h1 {
+h1 { 
   a {
     text-decoration: none;
     img {
@@ -128,27 +128,36 @@ h1 {
 }
 
 nav {
-  img {
-    max-width: 5rem;
-    display: block;
-    padding: 1rem;
-    margin-left: auto;
+  right: 0;
+  .menu {
+    position: relative;
+    z-index: 5;
+    img {
+      position: relative;
+      z-index: 5;
+      max-width: 5rem;
+      display: block;
+      padding: 1rem;
+      margin-left: auto;
+    } 
   }
   ul {
     position: absolute;
-    right: 1rem;
-    top: 4rem;
+    top: 0;
+    right: 0;
+    width: 14rem;
+    height: 100vh;
     z-index: 2;
     background-color: white;
     margin-left: auto;
-    border: 1px solid $gray;
+    border-left: 1px solid $gray;
     list-style: none;
     margin: 0;
-    padding: 0;
-    max-width: 8rem;
+    padding: 5rem 0 0;
     li {
-      line-height: 1.25rem;
+      line-height: 3rem;
       font-family: $body;
+      font-size: 1.25rem;
       display: inline-block;
       width: 100%;
       box-sizing: border-box;
@@ -171,21 +180,23 @@ nav {
 
 /* Hide the Menu */
 .hidden {
-  display: none;
+  display: block;
+  right: -100%;
 }
 
 /* Show the Menu */
 .shown {
   display: block;
-  animation: fade .5s ease;
+  right: 0%;
+  animation: slide .25s linear;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0;
+@keyframes slide {
+  0% {
+    right: -100%;
   }
-  to {
-    opacity: 1;
+  100% {
+    right: 0;
   }
 }
 

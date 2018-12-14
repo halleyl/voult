@@ -92,64 +92,75 @@ h1 a {
     max-width: 15rem;
     padding: 1rem 0 0 1rem; }
 
-nav img {
-  max-width: 5rem;
-  display: block;
-  padding: 1rem;
-  margin-left: auto; }
-nav ul {
-  position: absolute;
-  right: 1rem;
-  top: 4rem;
-  z-index: 2;
-  background-color: white;
-  margin-left: auto;
-  border: 1px solid #4a4a4a;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  max-width: 8rem; }
-  nav ul li {
-    line-height: 1.25rem;
-    font-family: "Nunito", sans-serif;
-    display: inline-block;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin: 0; }
-    nav ul li a {
-      text-decoration: none;
+nav {
+  right: 0; }
+  nav .menu {
+    position: relative;
+    z-index: 5; }
+    nav .menu img {
+      position: relative;
+      z-index: 5;
+      max-width: 5rem;
+      display: block;
+      padding: 1rem;
+      margin-left: auto; }
+  nav ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 14rem;
+    height: 100vh;
+    z-index: 2;
+    background-color: white;
+    margin-left: auto;
+    border-left: 1px solid #4a4a4a;
+    list-style: none;
+    margin: 0;
+    padding: 5rem 0 0; }
+    nav ul li {
+      line-height: 3rem;
+      font-family: "Nunito", sans-serif;
+      font-size: 1.25rem;
       display: inline-block;
-      color: #4a4a4a;
       width: 100%;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
-      padding: .75rem 1rem; }
-      nav ul li a:hover {
-        color: white;
-        background-color: #d95000; }
+      margin: 0; }
+      nav ul li a {
+        text-decoration: none;
+        display: inline-block;
+        color: #4a4a4a;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        padding: .75rem 1rem; }
+        nav ul li a:hover {
+          color: white;
+          background-color: #d95000; }
 
 /* Hide the Menu */
 .hidden {
-  display: none; }
+  display: block;
+  right: -100%; }
 
 /* Show the Menu */
 .shown {
   display: block;
-  -webkit-animation: fade .5s ease;
-          animation: fade .5s ease; }
+  right: 0%;
+  -webkit-animation: slide .25s linear;
+          animation: slide .25s linear; }
 
-@-webkit-keyframes fade {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+@-webkit-keyframes slide {
+  0% {
+    right: -100%; }
+  100% {
+    right: 0; } }
 
-@keyframes fade {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+@keyframes slide {
+  0% {
+    right: -100%; }
+  100% {
+    right: 0; } }
 .what {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 80, 0, 0.75)), to(rgba(217, 80, 0, 0.75))), url("../images/index-what-600.jpg");
   background: linear-gradient(rgba(217, 80, 0, 0.75), rgba(217, 80, 0, 0.75)), url("../images/index-what-600.jpg");
