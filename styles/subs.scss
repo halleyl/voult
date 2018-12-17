@@ -48,6 +48,10 @@ time, mark, audio, video {
 
 header {
   position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
   z-index: 2;
   width: 100%;
   top: 0;
@@ -218,6 +222,10 @@ main {
 /* Footer Styles */
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: $accent;
   text-align: center;
   margin-top: 1rem;
@@ -242,9 +250,6 @@ footer {
 @media(min-width:700px) {
   
   header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: flex-end;
   }
 
@@ -310,10 +315,8 @@ footer {
   
   footer {
     text-align: left;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     p {
       padding: 2rem;
     }
