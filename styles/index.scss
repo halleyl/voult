@@ -151,21 +151,18 @@ nav {
 @keyframes fade {
   0% {
     opacity: 1;
-    filter: blur(0px);
   }
   100% {
     opacity: .25;
-    filter: blur(3px);
   }
 }
 
 .fade {
-  animation: fade .5s linear;
+  animation: fade .6s linear;
 }
 
 .blur {
   opacity: .25;
-  filter: blur(3px);
 }
 
 .what {
@@ -267,7 +264,13 @@ nav {
     height: 9rem;
     max-height: 15rem;
     margin: 3rem auto 0;
-    @include under-links;
+    @include plain-links;
+    a {
+      color: $gray;
+      &:hover {
+        color: $accent;
+      }
+    }
     img {
       width: 4rem;
       position: relative;
@@ -308,9 +311,100 @@ footer {
     padding: 1rem;
   }
   aside {
+    @include plain-links;
     img {
       width: 3rem;
       padding: .25rem .25rem 1rem;
+    }
+  }
+}
+
+/* Header styles for screens over 700px */
+
+@media(min-width:700px) {
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  h1 { 
+    width: auto;
+  }
+
+  nav {
+    width: auto;
+    .menu {
+      display: none;
+      img {
+        display: none;
+      } 
+    }
+    ul {
+      position: relative;
+      width: 100%;
+      height: auto;
+      background-color: white;
+      border-left: 0;
+      padding: .5rem 1rem 0 2rem;
+      li {
+        line-height: 1.25rem;
+        float: left;
+        color: $gray;
+        font-size: 1.1rem;
+        display: inline;
+        width: auto;
+        a {
+          color: $gray;
+          padding: .75rem 1.25rem .5rem;
+          &:hover {
+            color: $accent;
+            background-color: inherit;
+          }
+        }
+      }
+    }
+  }
+
+  /* Hide the Menu */
+  .hidden {
+    display: block;
+    right: 0;
+  }
+
+  /* Show the Menu */
+  .shown {
+    display: block;
+    right: 0%;
+    animation: none;
+  }
+
+  .fade {
+    animation: none;
+  }
+}
+
+/* Footer styles for screens over 700px */
+
+@media(min-width:700px) {
+  
+  footer {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      padding: 2rem;
+    }
+    aside {
+      padding: 1.5rem;
+      img {
+        width: 3rem;
+        padding: .25rem;
+      }
     }
   }
 }
