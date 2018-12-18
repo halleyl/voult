@@ -143,15 +143,22 @@ nav {
   opacity: .25; }
 
 .what {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 80, 0, 0.75)), to(rgba(217, 80, 0, 0.75))), url("../images/index-what-600.jpg");
-  background: linear-gradient(rgba(217, 80, 0, 0.75), rgba(217, 80, 0, 0.75)), url("../images/index-what-600.jpg");
-  background-size: cover;
-  background-position: center;
   margin: 6rem 0 0; }
   .what a {
     text-decoration: none; }
   .what a:hover {
     text-decoration: none; }
+  .what a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 80, 0, 0.75)), to(rgba(217, 80, 0, 0.75))), url("../images/index-what-600.jpg");
+    background: linear-gradient(rgba(217, 80, 0, 0.75), rgba(217, 80, 0, 0.75)), url("../images/index-what-600.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; }
   .what p {
     font-family: "Libre Baskerville", serif;
     font-size: 2rem;
@@ -168,25 +175,46 @@ nav {
     text-shadow: 2px 2px 2px #4a4a4a; }
 
 .clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center; }
   .clients a {
     text-decoration: none; }
   .clients a:hover {
     text-decoration: none; }
   .clients h2 {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 0 80%;
+            flex: 2 0 80%;
     font-family: "Nunito", sans-serif;
     font-size: 2rem;
     text-align: center;
     color: #d95000;
     padding: 2rem; }
   .clients figure {
-    width: 70%;
-    margin: 0 auto 1rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%;
+    margin: 0 1rem 2rem;
     border: 1px solid #4a4a4a; }
     .clients figure img {
       max-width: 100%; }
+  .clients a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%; }
   .clients div {
-    width: 60%;
+    width: 100%;
     font-family: "Nunito", sans-serif;
     font-size: 1rem;
     text-align: center;
@@ -200,15 +228,22 @@ nav {
       background-color: #4a4a4a; }
 
 .about {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 80, 0, 0.75)), to(rgba(217, 80, 0, 0.75))), url("../images/index-about-600.jpg");
-  background: linear-gradient(rgba(217, 80, 0, 0.75), rgba(217, 80, 0, 0.75)), url("../images/index-about-600.jpg");
-  background-size: cover;
-  background-position: center;
   margin: 0; }
   .about a {
     text-decoration: none; }
   .about a:hover {
     text-decoration: none; }
+  .about a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 80, 0, 0.75)), to(rgba(217, 80, 0, 0.75))), url("../images/index-about-600.jpg");
+    background: linear-gradient(rgba(217, 80, 0, 0.75), rgba(217, 80, 0, 0.75)), url("../images/index-about-600.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; }
   .about p {
     font-family: "Libre Baskerville", serif;
     font-size: 2rem;
@@ -225,23 +260,39 @@ nav {
     text-shadow: 2px 2px 2px #4a4a4a; }
 
 .connect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center; }
   .connect a {
     text-decoration: none; }
   .connect a:hover {
     text-decoration: none; }
   .connect h2 {
+    -ms-flex-preferred-size: 2 0 80%;
+        flex-basis: 2 0 80%;
     font-family: "Nunito", sans-serif;
     font-size: 2rem;
     text-align: center;
     color: #d95000;
     padding: 2rem 2rem 1rem; }
   .connect figure {
-    width: 70%;
+    -ms-flex-preferred-size: 0 0 80%;
+        flex-basis: 0 0 80%;
+    min-width: 15rem;
     border: 1px solid #4a4a4a;
     height: 9rem;
     max-height: 15rem;
-    margin: 3rem auto 0; }
+    margin: 2.5rem 1rem .5rem; }
     .connect figure a {
       text-decoration: none; }
     .connect figure a:hover {
@@ -257,9 +308,14 @@ nav {
       margin-bottom: -1rem; }
     .connect figure figcaption {
       font-family: "Nunito", sans-serif;
-      font-size: 1rem; }
+      font-size: 1rem;
+      padding: 0 2rem 2rem; }
+  .connect a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%; }
   .connect div {
-    width: 60%;
+    width: 100%;
     font-family: "Nunito", sans-serif;
     font-size: 1rem;
     text-align: center;
@@ -311,7 +367,9 @@ footer {
             align-items: flex-end; }
 
   h1 {
-    width: auto; }
+    width: auto;
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
 
   nav {
     width: auto; }
@@ -355,6 +413,55 @@ footer {
   .fade {
     -webkit-animation: none;
             animation: none; } }
+/* Content styles for screens over 700px */
+@media (min-width: 700px) {
+  .what a {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 80, 0, 0.75)), to(rgba(217, 80, 0, 0.75))), url("../images/index-what-900.jpg");
+    background: linear-gradient(rgba(217, 80, 0, 0.75), rgba(217, 80, 0, 0.75)), url("../images/index-what-900.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; }
+  .what p {
+    font-size: 2.25rem;
+    padding: 8rem 6rem 0; }
+  .what h2 {
+    padding: 2rem 6rem 8rem; }
+
+  .clients {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .clients h2 {
+      -webkit-box-flex: 2;
+          -ms-flex: 2 0 80%;
+              flex: 2 0 80%; }
+    .clients figure {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 40%;
+              flex: 0 0 40%; }
+    .clients a {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 80%;
+              flex: 0 0 80%; }
+      .clients a div {
+        max-width: 600px; }
+
+  .about a {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 80, 0, 0.75)), to(rgba(217, 80, 0, 0.75))), url("../images/index-about-900.jpg");
+    background: linear-gradient(rgba(217, 80, 0, 0.75), rgba(217, 80, 0, 0.75)), url("../images/index-about-900.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; }
+  .about p {
+    font-size: 2.25rem;
+    padding: 8rem 6rem 0; }
+  .about h2 {
+    padding: 2rem 6rem 8rem; }
+
+  .connect a div {
+    max-width: 600px; } }
 /* Footer styles for screens over 700px */
 @media (min-width: 700px) {
   footer {
@@ -373,5 +480,56 @@ footer {
       footer aside img {
         width: 3rem;
         padding: .25rem; } }
+/* Header styles for screens over 900px */
+@media (min-width: 900px) {
+  nav ul li {
+    font-size: 1.25rem; }
+    nav ul li a {
+      padding: .75rem 2.5rem .5rem; } }
+/* Content styles for screens over 900px; */
+@media (min-width: 900px) {
+  .what a {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 80, 0, 0.75)), to(rgba(217, 80, 0, 0.75))), url("../images/index-what-1200.jpg");
+    background: linear-gradient(rgba(217, 80, 0, 0.75), rgba(217, 80, 0, 0.75)), url("../images/index-what-1200.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; }
+  .what p {
+    padding: 8rem 20% 0; }
+  .what h2 {
+    padding: 2rem 20% 8rem; }
+
+  .clients {
+    margin: 2rem auto; }
+    .clients h2 {
+      -webkit-box-flex: 2;
+          -ms-flex: 2 0 80%;
+              flex: 2 0 80%; }
+    .clients figure {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 20%;
+              flex: 0 0 20%; }
+    .clients a {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 80%;
+              flex: 0 0 80%; }
+      .clients a div {
+        max-width: 600px; }
+
+  .about a {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 80, 0, 0.75)), to(rgba(217, 80, 0, 0.75))), url("../images/index-about-1200.jpg");
+    background: linear-gradient(rgba(217, 80, 0, 0.75), rgba(217, 80, 0, 0.75)), url("../images/index-about-1200.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; }
+  .about p {
+    padding: 8rem 20% 0; }
+  .about h2 {
+    padding: 2rem 20% 8rem; }
+
+  .connect {
+    margin: 2rem auto; } }
 
 /*# sourceMappingURL=index.css.map */

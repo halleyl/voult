@@ -170,11 +170,19 @@ nav {
 }
 
 .what {
-  background: linear-gradient($overlay, $overlay), url('../images/index-what-600.jpg');
-  background-size: cover;
-  background-position: center;
   margin: 6rem 0 0;
   @include plain-links;
+  a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    background: linear-gradient($overlay, $overlay), url('../images/index-what-600.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
   p {
     font-family: $display;
     font-size: 2rem;
@@ -194,9 +202,14 @@ nav {
 }
 
 .clients {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
   @include plain-links;
   h2 {
+    flex: 2 0 80%;
     font-family: $body;
     font-size: 2rem;
     text-align: center;
@@ -204,15 +217,18 @@ nav {
     padding: 2rem;
   }
   figure {
-    width: 70%;
-    margin: 0 auto 1rem;
+    flex: 0 0 80%;
+    margin: 0 1rem 2rem;
     border: 1px solid $gray;
     img {
       max-width: 100%;
     }
   }
+  a {
+    flex: 0 0 80%;
+  }
   div {
-    width: 60%;
+    width: 100%;
     font-family: $body;
     font-size: 1rem;
     text-align: center;
@@ -229,11 +245,19 @@ nav {
 }
 
 .about {
-  background: linear-gradient($overlay, $overlay), url('../images/index-about-600.jpg');
-  background-size: cover;
-  background-position: center;
   margin: 0;
   @include plain-links;
+  a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    background: linear-gradient($overlay, $overlay), url('../images/index-about-600.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
   p {
     font-family: $display;
     font-size: 2rem;
@@ -253,9 +277,14 @@ nav {
 }
 
 .connect {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
   @include plain-links;
   h2 {
+    flex-basis: 2 0 80%;
     font-family: $body;
     font-size: 2rem;
     text-align: center;
@@ -263,11 +292,12 @@ nav {
     padding: 2rem 2rem 1rem;
   }
   figure {
-    width: 70%;
+    flex-basis: 0 0 80%;
+    min-width: 15rem;
     border: 1px solid $gray;
     height: 9rem;
     max-height: 15rem;
-    margin: 3rem auto 0;
+    margin: 2.5rem 1rem .5rem;
     @include plain-links;
     a {
       color: $gray;
@@ -284,10 +314,14 @@ nav {
     figcaption {
       font-family: $body;
       font-size: 1rem;
+      padding: 0 2rem 2rem;
     }
   }
+  a {
+    flex: 0 0 80%;
+  }
   div {
-    width: 60%;
+    width: 100%;
     font-family: $body;
     font-size: 1rem;
     text-align: center;
@@ -337,6 +371,7 @@ footer {
 
   h1 { 
     width: auto;
+    align-self: flex-start;
   }
 
   nav {
@@ -391,6 +426,70 @@ footer {
   }
 }
 
+/* Content styles for screens over 700px */
+
+@media(min-width:700px) {
+
+  .what {
+    a {
+      background: linear-gradient($overlay, $overlay), url('../images/index-what-900.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    p {
+      font-size: 2.25rem;
+      padding: 8rem 6rem 0;
+    }
+    h2 {
+      padding: 2rem 6rem 8rem;
+    }
+  }
+  
+  .clients {
+    justify-content: center;
+    h2 {
+      flex: 2 0 80%;
+      
+    }
+    figure {
+      flex: 0 0 40%;
+    }
+    a {
+      flex: 0 0 80%;
+      div {
+        max-width: 600px;
+      }
+    }
+  }
+  
+  .about {
+    a {
+      background: linear-gradient($overlay, $overlay), url('../images/index-about-900.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    p {
+      font-size: 2.25rem;
+      padding: 8rem 6rem 0;
+    }
+    h2 {
+      padding: 2rem 6rem 8rem;
+    }  
+  }
+  
+  .connect {
+    a {
+      div {
+        max-width: 600px;
+      }
+    }
+  }
+}
+
 /* Footer styles for screens over 700px */
 
 @media(min-width:700px) {
@@ -409,5 +508,73 @@ footer {
         padding: .25rem;
       }
     }
+  }
+}
+
+/* Header styles for screens over 900px */
+
+@media(min-width:900px) {
+  nav ul li {
+    font-size: 1.25rem;
+    a {
+      padding: .75rem 2.5rem .5rem;
+    }
+  }
+}
+
+/* Content styles for screens over 900px; */
+
+@media(min-width:900px) {
+  .what {
+    a {
+      background: linear-gradient($overlay, $overlay), url('../images/index-what-1200.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    p {
+      padding: 8rem 20% 0;
+    }
+    h2 {
+      padding: 2rem 20% 8rem;
+    }
+  }
+  
+  .clients {
+    margin: 2rem auto;
+    h2 {
+      flex: 2 0 80%;
+    }
+    figure {
+      flex: 0 0 20%;
+    }
+    a {
+      flex: 0 0 80%;
+      div {
+        max-width: 600px;
+      }
+    }
+  }
+  
+  .about {
+    a {
+      background: linear-gradient($overlay, $overlay), url('../images/index-about-1200.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+
+    }
+    p {
+      padding: 8rem 20% 0;
+    }
+    h2 {
+      padding: 2rem 20% 8rem;
+    }  
+  }
+
+  .connect {
+    margin: 2rem auto;
   }
 }
