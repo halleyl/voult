@@ -4,6 +4,8 @@
   font-family: "Nunito", sans-serif; }
 
 .form {
+  padding-top: 1rem;
+  clear: both;
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
   width: 100%;

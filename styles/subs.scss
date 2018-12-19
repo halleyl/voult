@@ -176,7 +176,7 @@ main {
   margin-top: 6rem;
   h2 {
     font-family: $display;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: white;
     width: 100%;
     text-align: center;
@@ -309,6 +309,43 @@ footer {
   }
 }
 
+/* General Content styles for screens over 700px */
+
+@media(min-width:700px) {
+  main {
+    h2 {
+      text-align: left;
+      padding: 3rem 0 3rem 2rem;
+    }
+    .hero {
+      padding: 0 2.5rem 1rem 2rem;
+      width: 55%;
+      float: right;
+      margin-top: -6rem;
+    }
+    .text {
+      padding: 1rem;
+      p {
+        
+      }
+    }
+  }
+
+  .cta {
+    width: 100%;
+    p {
+      width: 50%;
+      margin: 3rem 5% .5rem;
+      display: inline-block;
+    }
+    div {
+      width: 30%;
+      vertical-align: middle;
+      margin: 1rem 5% 2.5rem 0;
+    }
+  }
+}
+
 /* Footer styles for screens over 700px */
 
 @media(min-width:700px) {
@@ -326,6 +363,36 @@ footer {
         width: 3rem;
         padding: .25rem;
       }
+    }
+  }
+}
+
+/* Header styles for screens over 900px */
+
+@media(min-width:900px) {
+  nav ul li {
+    font-size: 1.25rem;
+    a {
+      padding: .75rem 2.5rem .5rem;
+    }
+  }
+}
+
+/* General Content styles for screens over 700px */
+
+@media(min-width:900px) {
+  main {
+    h2 {
+      font-size: 2.75rem;
+    }
+  }
+
+  .cta {
+    p {
+      width: 40%;
+    }
+    div {
+      width: 40%;
     }
   }
 }

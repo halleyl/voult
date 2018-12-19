@@ -4,6 +4,7 @@
   font-family: "Nunito", sans-serif; }
 
 .carousel {
+  clear: both;
   width: 100%;
   border-top: 1px solid #4a4a4a;
   border-bottom: 1px solid #4a4a4a; }

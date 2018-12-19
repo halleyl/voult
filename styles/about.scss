@@ -32,6 +32,8 @@ $display: 'Libre Baskerville', serif;
 }
 
 .cards {
+  padding-top: 1rem;
+  clear: both;
   text-align: center;
   @include plain-links;
   h3 {

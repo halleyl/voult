@@ -4,6 +4,8 @@
   font-family: "Nunito", sans-serif; }
 
 .cards {
+  padding-top: 1rem;
+  clear: both;
   text-align: center; }
   .cards a {
     text-decoration: none; }
