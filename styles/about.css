@@ -4,9 +4,21 @@
   font-family: "Nunito", sans-serif; }
 
 .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
   padding-top: 1rem;
-  clear: both;
-  text-align: center; }
+  clear: both; }
   .cards a {
     text-decoration: none; }
   .cards a:hover {
@@ -17,9 +29,12 @@
     text-align: center;
     color: #d95000; }
   .cards figure {
-    width: 80%;
+    -ms-flex-preferred-size: 0 0 80%;
+        flex-basis: 0 0 80%;
+    min-width: 15rem;
+    max-width: 20rem;
     border: 1px solid #4a4a4a;
-    margin: 5rem auto 0; }
+    margin: 5rem 2.12% 0; }
     .cards figure a {
       color: #4a4a4a;
       -webkit-text-decoration: underline #d95000 solid;
@@ -42,5 +57,11 @@
       margin-top: -3.5rem; }
       .cards figure figcaption p {
         margin-top: 1rem; }
+
+@media (min-width: 900px) {
+  .cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 10%; } }
 
 /*# sourceMappingURL=about.css.map */

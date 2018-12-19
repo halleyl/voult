@@ -32,7 +32,11 @@ $display: 'Libre Baskerville', serif;
 }
 
 .form {
-  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: left;
   clear: both;
   font-family: $body;
   font-size: 1rem;
@@ -40,6 +44,7 @@ $display: 'Libre Baskerville', serif;
   padding: 0 10%;
   margin: 1rem 0 0;
   .single {
+    flex: 1 0 100%;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -58,10 +63,13 @@ $display: 'Libre Baskerville', serif;
       font-size: .8rem;
     }
   }
+  .select {
+    flex: 1 0 100%;
+  }
   select {
     position: relative;
     width: 100%;
-    height: 2.5rem;
+    height: 2.25rem;
     color: $gray;
     font-size: 1rem;
     margin: 0 0 1rem 0;
@@ -82,6 +90,7 @@ $display: 'Libre Baskerville', serif;
     height: 6.25rem;
   }
   .double {
+    flex: 1 0 100%;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -89,7 +98,7 @@ $display: 'Libre Baskerville', serif;
       width: 100%;
       color: $gray;
       font-size: 1rem;
-      height: 5rem;
+      height: 5.1rem;
       padding: .5rem 0;
       text-indent: .5rem;
       border: 1px solid $gray;
@@ -115,32 +124,115 @@ $display: 'Libre Baskerville', serif;
 }
 
 .contact {
-  max-width: 400px;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
   margin: 0 auto 2rem;
-  img {
-    width: 100%;
-    max-width: 400px;
+  .map {
+    flex: 0 0 auto;
+    border: 1px solid $gray;
+    margin-bottom: 1rem;
+    img {
+      width: 100%;
+      max-width: 360px;
+    }
   }
   figure {
-    width: 70%;
-    padding: 1rem;
-    margin: 0 15%;
+    padding: 1rem 1rem 6rem;
     position: relative;
+    &:last-of-type {
+      padding-bottom: 3rem;
+    }
     a {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
       text-decoration: none;
       color: $gray;
       img {
+        float: left;
         width: 2rem;
         margin-right: 1rem;
       }
       figcaption {
+        float: left;
         font-family: $body;
+        &:hover {
+          color: $accent;
+        }
       }
-      
+    }
+  }
+}
+
+@media(min-width:700px) {
+  .form {
+    justify-content: space-around;
+    .single {
+      flex: 1 0 45%;
+      &:nth-of-type(1),&:nth-of-type(3),&:nth-of-type(7) {
+        margin-right: 5%;
+      }
+    }
+    .select {
+      flex: 1 0 45%;
+      margin-right: 5%;
+    }
+    .double {
+      flex: 1 0 45%;
+    }
+  }
+}
+
+@media(min-width:900px) {
+  .form {
+    .single {
+      flex: 1 0 30%;
+      &:nth-of-type(3) {
+        margin-right: 0;
+      }
+      &:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(4),&:nth-of-type(7) {
+        margin-right: 2.5%;
+      }
+    }
+    .select {
+      flex: 1 0 30%;
+      margin-right: 2.5%;
+    }
+    .double {
+      flex: 1 0 64%;
+    }
+  }
+}
+
+@media(min-width:900px) {
+  .contact {
+    flex-direction: row;
+    align-items: flex-start;
+    .map {
+      flex: 0 0 auto;
+      margin-right: 2rem;
+      img {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+    figure {
+      margin-left: 2rem;
+      flex: 0 0 auto;
+      a {
+        text-decoration: none;
+        color: $gray;
+        img {
+          float: left;
+          width: 2rem;
+          margin-right: 1rem;
+        }
+        figcaption {
+          float: left;
+          font-family: $body;
+        }
+      }
     }
   }
 }

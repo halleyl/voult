@@ -221,7 +221,9 @@ footer {
             align-items: flex-end; }
 
   h1 {
-    width: auto; }
+    width: auto;
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
 
   nav {
     width: auto; }

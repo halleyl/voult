@@ -4,7 +4,19 @@
   font-family: "Nunito", sans-serif; }
 
 .form {
-  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: left;
   clear: both;
   font-family: "Nunito", sans-serif;
   font-size: 1rem;
@@ -12,6 +24,9 @@
   padding: 0 10%;
   margin: 1rem 0 0; }
   .form .single {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
     width: 100%;
     padding: 0;
     margin: 0; }
@@ -27,10 +42,14 @@
     .form .single span {
       color: #d95000;
       font-size: .8rem; }
+  .form .select {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%; }
   .form select {
     position: relative;
     width: 100%;
-    height: 2.5rem;
+    height: 2.25rem;
     color: #4a4a4a;
     font-size: 1rem;
     margin: 0 0 1rem 0;
@@ -50,6 +69,9 @@
   .form .help {
     height: 6.25rem; }
   .form .double {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
     width: 100%;
     padding: 0;
     margin: 0; }
@@ -57,7 +79,7 @@
       width: 100%;
       color: #4a4a4a;
       font-size: 1rem;
-      height: 5rem;
+      height: 5.1rem;
       padding: .5rem 0;
       text-indent: .5rem;
       border: 1px solid #4a4a4a;
@@ -78,34 +100,118 @@
       background-color: #4a4a4a; }
 
 .contact {
-  max-width: 400px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
   margin: 0 auto 2rem; }
-  .contact img {
-    width: 100%;
-    max-width: 400px; }
+  .contact .map {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    border: 1px solid #4a4a4a;
+    margin-bottom: 1rem; }
+    .contact .map img {
+      width: 100%;
+      max-width: 360px; }
   .contact figure {
-    width: 70%;
-    padding: 1rem;
-    margin: 0 15%;
+    padding: 1rem 1rem 6rem;
     position: relative; }
+    .contact figure:last-of-type {
+      padding-bottom: 3rem; }
     .contact figure a {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
       text-decoration: none;
       color: #4a4a4a; }
       .contact figure a img {
+        float: left;
         width: 2rem;
         margin-right: 1rem; }
       .contact figure a figcaption {
+        float: left;
         font-family: "Nunito", sans-serif; }
+        .contact figure a figcaption:hover {
+          color: #d95000; }
+
+@media (min-width: 700px) {
+  .form {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .form .single {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 45%;
+              flex: 1 0 45%; }
+      .form .single:nth-of-type(1), .form .single:nth-of-type(3), .form .single:nth-of-type(7) {
+        margin-right: 5%; }
+    .form .select {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 45%;
+              flex: 1 0 45%;
+      margin-right: 5%; }
+    .form .double {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 45%;
+              flex: 1 0 45%; } }
+@media (min-width: 900px) {
+  .form .single {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 30%;
+            flex: 1 0 30%; }
+    .form .single:nth-of-type(3) {
+      margin-right: 0; }
+    .form .single:nth-of-type(1), .form .single:nth-of-type(2), .form .single:nth-of-type(4), .form .single:nth-of-type(7) {
+      margin-right: 2.5%; }
+  .form .select {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 30%;
+            flex: 1 0 30%;
+    margin-right: 2.5%; }
+  .form .double {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 64%;
+            flex: 1 0 64%; } }
+@media (min-width: 900px) {
+  .contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .contact .map {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
+      margin-right: 2rem; }
+      .contact .map img {
+        width: 100%;
+        max-width: 400px; }
+    .contact figure {
+      margin-left: 2rem;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto; }
+      .contact figure a {
+        text-decoration: none;
+        color: #4a4a4a; }
+        .contact figure a img {
+          float: left;
+          width: 2rem;
+          margin-right: 1rem; }
+        .contact figure a figcaption {
+          float: left;
+          font-family: "Nunito", sans-serif; } }
 
 /*# sourceMappingURL=connect.css.map */

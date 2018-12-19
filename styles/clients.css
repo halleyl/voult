@@ -2,6 +2,12 @@
 /* Mixin for plain link styles */
 .text {
   font-family: "Nunito", sans-serif; }
+  .text ul {
+    padding-bottom: 2rem; }
+    .text ul li {
+      list-style-position: inside;
+      list-style-image: url(../images/bullet.svg);
+      padding: .1rem 1.5rem; }
 
 .carousel {
   clear: both;

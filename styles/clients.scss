@@ -29,6 +29,14 @@ $display: 'Libre Baskerville', serif;
 
 .text {
   font-family: $body;
+  ul {
+    padding-bottom: 2rem;
+    li {
+      list-style-position: inside;
+      list-style-image: url(../images/bullet.svg);
+      padding: .1rem 1.5rem;
+    }
+  }
 }
 
 .carousel {
