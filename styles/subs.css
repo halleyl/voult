@@ -158,6 +158,7 @@ main {
   main .hero {
     width: 100%; }
   main .text p {
+    font-family: "Nunito", sans-serif;
     margin: 1rem; }
 
 .cta {
@@ -183,6 +184,7 @@ main {
 
 /* Footer Styles */
 footer {
+  clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

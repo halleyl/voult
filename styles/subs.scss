@@ -189,6 +189,7 @@ main {
   }
   .text {
     p {
+      font-family: $body;
       margin: 1rem;
     }
   }
@@ -222,6 +223,7 @@ main {
 /* Footer Styles */
 
 footer {
+  clear: both;
   display: flex;
   flex-direction: column;
   justify-content: center;
