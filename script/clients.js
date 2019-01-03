@@ -10,8 +10,8 @@ var slideLoc = document.getElementById('clients')
 // If the Url contains the client number, 
 // select that slide by marking it active
 if(clientNum != NaN && clientSlide != null) {
-  //window.location.href = '#clients'
   activeSlide.classList.remove('active')
   clientSlide.classList.add('active')
+  // scroll down to the slideshow
   slideLoc.scrollIntoView()
 }
