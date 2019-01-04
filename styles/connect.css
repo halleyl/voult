@@ -139,11 +139,11 @@
         float: left;
         width: 2rem;
         margin-right: 1rem; }
-      .contact figure a figcaption {
-        float: left;
-        font-family: "Nunito", sans-serif; }
-        .contact figure a figcaption:hover {
-          color: #d95000; }
+    .contact figure figcaption {
+      float: left;
+      font-family: "Nunito", sans-serif; }
+      .contact figure figcaption a:hover {
+        color: #d95000; }
 
 @media (min-width: 700px) {
   .form {

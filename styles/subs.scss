@@ -186,7 +186,6 @@ main {
   }
   .hero {
     width: 100%;
-    max-width: 600px;
   }
   .text {
     p {
@@ -326,6 +325,7 @@ footer {
       width: 55%;
       float: right;
       margin-top: -6rem;
+      max-width: 600px;
     }
     .text {
       padding: 1rem;

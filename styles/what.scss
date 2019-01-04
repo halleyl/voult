@@ -47,7 +47,7 @@ $display: 'Libre Baskerville', serif;
     color: $gray;
   }
   figure {
-    flex-basis: 0 0 80%;
+    flex: 0 0 80%;
     min-width: 15rem;
     max-width: 20rem;
     border: 1px solid $gray;

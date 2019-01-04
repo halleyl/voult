@@ -156,8 +156,7 @@ main {
     padding: 3rem 0;
     margin: 0; }
   main .hero {
-    width: 100%;
-    max-width: 600px; }
+    width: 100%; }
   main .text p {
     font-family: "Nunito", sans-serif;
     margin: 1rem; }
@@ -279,7 +278,8 @@ footer {
     padding: 0 2.5rem 1rem 2rem;
     width: 55%;
     float: right;
-    margin-top: -6rem; }
+    margin-top: -6rem;
+    max-width: 600px; }
   main .text {
     padding: 1rem; }
 

@@ -155,12 +155,12 @@ $display: 'Libre Baskerville', serif;
         width: 2rem;
         margin-right: 1rem;
       }
-      figcaption {
-        float: left;
-        font-family: $body;
-        &:hover {
-          color: $accent;
-        }
+    }
+    figcaption {
+      float: left;
+      font-family: $body;
+      a:hover {
+        color: $accent;
       }
     }
   }
