@@ -278,17 +278,20 @@ nav {
   .connect a:hover {
     text-decoration: none; }
   .connect h2 {
-    -ms-flex-preferred-size: 2 0 80%;
-        flex-basis: 2 0 80%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100vw;
+            flex: 0 0 100vw;
+    width: 100vw;
+    min-width: 100vw;
     font-family: "Nunito", sans-serif;
     font-size: 2rem;
     text-align: center;
     color: #d95000;
     padding: 2rem 2rem 1rem; }
   .connect figure {
-    -ms-flex-preferred-size: 0 0 80%;
-        flex-basis: 0 0 80%;
-    min-width: 15rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 15rem;
+            flex: 0 0 15rem;
     border: 1px solid #4a4a4a;
     height: 9rem;
     max-height: 15rem;

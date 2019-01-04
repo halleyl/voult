@@ -136,6 +136,7 @@ $display: 'Libre Baskerville', serif;
     border: 1px solid $gray;
     margin-bottom: 1rem;
     img {
+      display: block;
       width: 100%;
       max-width: 360px;
     }

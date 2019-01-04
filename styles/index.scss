@@ -284,7 +284,9 @@ nav {
   text-align: center;
   @include plain-links;
   h2 {
-    flex-basis: 2 0 80%;
+    flex: 0 0 100vw;
+    width: 100vw;
+    min-width: 100vw;
     font-family: $body;
     font-size: 2rem;
     text-align: center;
@@ -292,8 +294,7 @@ nav {
     padding: 2rem 2rem 1rem;
   }
   figure {
-    flex-basis: 0 0 80%;
-    min-width: 15rem;
+    flex: 0 0 15rem;
     border: 1px solid $gray;
     height: 9rem;
     max-height: 15rem;

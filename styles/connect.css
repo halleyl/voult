@@ -124,6 +124,7 @@
     border: 1px solid #4a4a4a;
     margin-bottom: 1rem; }
     .contact .map img {
+      display: block;
       width: 100%;
       max-width: 360px; }
   .contact figure {

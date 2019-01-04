@@ -156,7 +156,8 @@ main {
     padding: 3rem 0;
     margin: 0; }
   main .hero {
-    width: 100%; }
+    width: 100%;
+    max-width: 600px; }
   main .text p {
     font-family: "Nunito", sans-serif;
     margin: 1rem; }
